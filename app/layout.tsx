@@ -21,6 +21,8 @@ const mono = JetBrains_Mono({
   variable: '--font-mono',
 })
 
+import SmoothScroll from '../components/SmoothScroll'
+
 export const metadata: Metadata = {
   title: 'Portfolio — Riya Thakur',
   description: 'IT Graduate • Software Development • Data • Web • MCA Student',
@@ -43,7 +45,6 @@ export default function RootLayout({
           }
           body {
             overflow-x: hidden;
-            background: #050208;
           }
            /* Disable scroll pull-to-refresh on mobile */
           body { overscroll-behavior-y: none; }
@@ -68,7 +69,9 @@ export default function RootLayout({
           </defs>
         </svg>
         
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   )

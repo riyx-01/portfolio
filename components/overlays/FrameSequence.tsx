@@ -10,7 +10,7 @@ const SLIDES = [
   {
     id: 1,
     heading: ["Hi, I'm ", "Riya Thakur."],
-    subtext: "A technology enthusiast from Mumbai, India.",
+    subtext: "MCA Candidate | Full-Stack Developer | IT Professional",
     position: 'left',
     range: [0.0, 0.18],
     color: 'red'
@@ -18,7 +18,7 @@ const SLIDES = [
   {
     id: 2,
     heading: ["I Build ", "Intelligent Systems."],
-    subtext: "Passionate about AI, Machine Learning, Data Science, and Web Development.",
+    subtext: "First-Class Honours Graduate (9.39 GPA) specializing in full-stack architecture and deep learning diagnostics.",
     position: 'left',
     range: [0.20, 0.36],
     color: 'blue'
@@ -26,23 +26,23 @@ const SLIDES = [
   {
     id: 3,
     heading: ["Built on a ", "Strong Foundation."],
-    subtext: "B.Sc. IT (Hons) — GPA 9.39, S.K. Somaiya College. Currently: MCA at BVIMIT.",
+    subtext: "B.Sc. IT (Hons) from S.K. Somaiya College. Currently pursuing MCA at BVIMIT.",
     position: 'right',
     range: [0.38, 0.54],
     color: 'red'
   },
   {
     id: 4,
-    heading: ["7 Projects. ", "Real Problems."],
-    subtext: "From Deepfake Detection to Breast Cancer AI — every project solves something real.",
+    heading: ["Real-world ", "Solutions."],
+    subtext: "From AI Health Assistants (HSync) and Deepfake Detection pipelines to Enterprise Registration Systems.",
     position: 'left',
     range: [0.56, 0.72],
     color: 'blue'
   },
   {
     id: 5,
-    heading: ["Code That ", "Changes the World."],
-    subtext: "My goal: top tech companies, impactful AI systems, and solutions that matter.",
+    heading: ["Performance under ", "Pressure."],
+    subtext: "Proven technical lead resolving crises for 110+ concurrent users and live directing The Hindu Awards 2025.",
     position: 'center',
     range: [0.74, 0.90],
     color: 'red'
@@ -57,6 +57,7 @@ const SLIDES = [
     dot: true
   }
 ]
+
 
 // OUTSIDE the component (module-level) — persist context
 let cachedCtx: CanvasRenderingContext2D | null = null

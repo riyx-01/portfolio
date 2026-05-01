@@ -1,6 +1,6 @@
 canvas {
   filter: brightness(1.08) saturate(1.25);
-  background: #050208;
+  background: transparent;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;

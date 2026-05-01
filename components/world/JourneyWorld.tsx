@@ -5,8 +5,9 @@ import { Zone2_About } from './Zone2_About'
 import { Zone3_Skills } from './Zone3_Skills'
 import { Zone4_Projects } from './Zone4_Projects'
 import { Zone5_Contact } from './Zone5_Contact'
+import { Zone6_Contact } from './Zone6_Contact'
 
-export function JourneyWorld({ scrollProgress }: { scrollProgress: number }) {
+export function JourneyWorld() {
   return (
     <group>
       <Zone1_Hero />
@@ -14,6 +15,7 @@ export function JourneyWorld({ scrollProgress }: { scrollProgress: number }) {
       <Zone3_Skills />
       <Zone4_Projects />
       <Zone5_Contact />
+      <Zone6_Contact />
     </group>
   )
 }

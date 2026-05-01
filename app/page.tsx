@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useState, useRef } from 'react'
 import { SCROLL_HEIGHT, FRAME_END_PERCENT, TOTAL_FRAMES } from '@/lib/constants'
-import { WorldExperience } from '@/components/world/WorldExperience'
+
 import { FrameSequence } from '@/components/overlays/FrameSequence'
 import { PortfolioOverlays } from '@/components/PortfolioOverlays'
 import { CyberpunkLoadScreen } from '@/components/CyberpunkLoadScreen'
+import MagicRings from '@/components/bits/MagicRings'
+import Balatro from '@/components/bits/Balatro'
 import { preloadFrames } from '@/lib/frameLoader'
 import { AnimatePresence } from 'framer-motion'
 import { ScanlineTransition } from '@/components/world/ScanlineTransition'
@@ -60,6 +62,26 @@ export default function Page() {
   return (
     <>
        <ScanlineTransition active={framesDone} />
+       
+       <div style={{ position: 'fixed', inset: 0, zIndex: -10, pointerEvents: 'none' }}>
+         <Balatro 
+           color1="#1a0830" 
+           color2="#0a0510" 
+           color3="#ff2020" 
+           contrast={4.0} 
+           lighting={0.3} 
+           pixelFilter={600}
+         />
+       </div>
+
+       <MagicRings 
+         color="#ff2020" 
+         colorTwo="#1e90ff" 
+         followMouse={true}
+         ringCount={10}
+         speed={1.0}
+         opacity={0.3}
+       />
 
       <AnimatePresence>
         {!loadDone && (
@@ -73,7 +95,7 @@ export default function Page() {
       <div style={{ 
         height: SCROLL_HEIGHT, 
         position: 'relative', 
-        background: '#050208',
+        background: 'transparent',
         opacity: loadDone ? 1 : 0,
         transition: 'opacity 0.8s ease'
       }}>
@@ -84,13 +106,11 @@ export default function Page() {
           <div style={{
             position: 'fixed',
             inset: 0,
-            zIndex: 0,
+            zIndex: 1,
             pointerEvents: 'none',
           }}>
-            {!framesDone ? (
+            {!framesDone && (
               <FrameSequence progress={frameProgress} />
-            ) : (
-              <WorldExperience scrollProgress={worldProgress} />
             )}
           </div>
 

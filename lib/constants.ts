@@ -20,16 +20,17 @@ export const BR = {
 
 // Night City Zone mapping
 export const ZONES = {
-  HERO:     { z: 0,    label: 'Home',     color: '#ff2020' },
-  ABOUT:    { z: -35,  label: 'About',    color: '#1e90ff' },
-  SKILLS:   { z: -70,  label: 'Skills',   color: '#ff2020' },
-  PROJECTS: { z: -105, label: 'Projects', color: '#1e90ff' },
-  CONTACT:  { z: -140, label: 'Contact',  color: '#ff2020' },
+  HERO:        { z: 0,    label: 'Home',        color: '#ff2020' },
+  ABOUT:       { z: -35,  label: 'About',       color: '#1e90ff' },
+  SKILLS:      { z: -70,  label: 'Skills',      color: '#ff2020' },
+  PROJECTS:    { z: -105, label: 'Projects',    color: '#1e90ff' },
+  ACHIEVEMENT: { z: -140, label: 'Achievement', color: '#1e90ff' },
+  CONTACT:     { z: -175, label: 'Contact',     color: '#ff2020' },
 } as const
 
 // Camera Path
 export const CAMERA_Z_START = 5
-export const CAMERA_Z_END = -140
+export const CAMERA_Z_END = -175
 
 // Fog settings — clear and cool cinematic visibility
 export const FOG_NEAR = 25

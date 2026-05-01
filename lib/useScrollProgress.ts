@@ -4,10 +4,11 @@ import { FRAME_END_PERCENT } from './constants'
 
 export const ZONE_BOUNDARIES = [
   0,      // Zone 0 start (Hero)
-  0.28,   // Zone 1 start (About)
-  0.45,   // Zone 2 start (Skills)
-  0.62,   // Zone 3 start (Projects)
-  0.80,   // Zone 4 start (Contact)
+  0.18,   // Zone 1 start (About)
+  0.36,   // Zone 2 start (Skills)
+  0.54,   // Zone 3 start (Projects)
+  0.72,   // Zone 4 start (Achievement)
+  0.88,   // Zone 5 start (Contact)
   1.0,    // End
 ]
 
