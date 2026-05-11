@@ -259,22 +259,27 @@ const ContactIcon = () => <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/20
 const SKILL_GROUPS = [{ cat: 'PROGRAMMING.SYS', items: ['Python', 'SQL', 'JavaScript', 'Java', 'HTML', 'CSS', 'R'], color: BR.red }, { cat: 'INTERFACE.SYS', items: ['Flask', 'ASP.NET', 'HTML5', 'CSS3', 'WordPress'], color: BR.blue }, { cat: 'DATA_DEX', items: ['TensorFlow', 'Keras', 'OpenCV', 'CNN/ResNet', 'Database Systems'], color: BR.red }, { cat: 'UTILITY.EXE', items: ['Git/GitHub', 'Figma', 'VS Code', 'Jupyter', 'Agile/REST'], color: BR.blue }]
 const RICH_PROJECTS = [
   {
+    title: 'DS Visualizer (DataStruct2.0)',
+    subtitle: 'CORE VIZ ENGINE',
+    tech: 'React, Three.js, Monaco, WASM',
+    desc: 'High-fidelity educational platform for visualizing complex data structures and algorithms in real-time with cinematic effects.',
+    features: [
+      'Real-Time Code-to-Viz Monaco integration',
+      '3D Skeuomorphic BookReader with TTS',
+      'WASM-powered secure execution sandbox'
+    ],
+    demonstrates: 'Advanced UI/UX, Three.js, Algorithm Engineering',
+    link: 'https://ds-vis.vercel.app/',
+    color: BR.blue
+  },
+  {
     title: 'Manthan Event Platform',
     subtitle: 'LIVE ARCHITECTURE',
-    tech: 'Lead Developer',
+    tech: 'Lead Developer (Next.js, Framer)',
     desc: 'Directed end-to-end development lifecycle for my institutional flagship event, serving over 110 concurrent users.',
     features: ['Led planning and Agile sprints', 'Real-time performance analytics framework', 'Risk mitigation & production deployment'],
     demonstrates: 'Leadership, Teamwork, High-pressure production deployment',
     link: 'https://bvimitmanthan.vercel.app/',
-    color: BR.blue
-  },
-  {
-    title: 'HSync',
-    subtitle: 'HEALTH ASSISTANT',
-    tech: 'Python, Flask, SQLite, JS, REST APIs',
-    desc: 'Architected health management platform enabling structured AI-generated health reports with historical tracking.',
-    features: ['Secure user auth & session management', 'HIPAA-aligned data privacy standards', 'Interpreted analytics & historical tracking'],
-    demonstrates: 'Full-stack development, API integration, Role-based access control',
     color: BR.red
   },
   {

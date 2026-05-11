@@ -9,13 +9,13 @@ export const ProjectsOverlay = React.memo(({ progress, zone }: OverlayProps) => 
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const projects = [
-    { num: '01', year: '2024', title: 'Deepfake Detection', desc: 'Real vs fake detection using ResNet-50, OpenCV, and Flask.', tags: ['Python','TensorFlow','OpenCV','Flask'], color: BR.teal },
-    { num: '02', year: '2024', title: 'Breast Cancer CNN', desc: 'CNN model classifying benign vs malignant cancer cells.', tags: ['Python','TensorFlow','CNN'], color: BR.red },
-    { num: '03', year: '2024', title: 'Student Management', desc: 'Full-stack web app for student records and course registration.', tags: ['ASP.NET','SQL','JavaScript'], color: BR.gold },
-    { num: '04', year: '2024', title: 'Manthan Event Site', desc: 'Live event website for BVIMIT\'s Manthan cultural event.', tags: ['Next.js','React','Framer Motion'], link: 'https://bvimitmanthan.vercel.app/', color: BR.teal },
-    { num: '05', year: '2024', title: 'Toontastic', desc: 'Cartoon discovery app with episode browsing and search.', tags: ['Search','Episodes','UX'], color: BR.red },
-    { num: '06', year: 'CONCEPT', title: 'TeamUpNow', desc: 'Sports platform connecting players to organize matches.', tags: ['Teammates','Scheduling','Reviews'], color: BR.gold },
-    { num: '07', year: 'CONCEPT', title: 'Code Visualizer', desc: 'Visual execution engine for data structures and algorithms.', tags: ['DSA','Animation','Educational'], color: BR.teal },
+    { num: '01', year: '2024', title: 'DS Visualizer (DataStruct2.0)', desc: 'Interactive, high-fidelity platform for visualizing complex DSA concepts with a 3D Code-to-Viz engine.', tags: ['React','Three.js','Monaco','WASM'], link: 'https://ds-vis.vercel.app/', color: BR.teal },
+    { num: '02', year: '2024', title: 'Manthan Event Site', desc: 'Live event website for BVIMIT\'s Manthan cultural event with high-performance animations.', tags: ['Next.js','React','Framer Motion'], link: 'https://bvimitmanthan.vercel.app/', color: BR.red },
+    { num: '03', year: '2024', title: 'Deepfake Detection', desc: 'Real vs fake detection using ResNet-50, OpenCV, and Flask for secure media verification.', tags: ['Python','TensorFlow','OpenCV','Flask'], color: BR.gold },
+    { num: '04', year: '2024', title: 'Breast Cancer CNN', desc: 'Medical diagnostic CNN model classifying benign vs malignant cancer cells with high accuracy.', tags: ['Python','TensorFlow','CNN'], color: BR.teal },
+    { num: '05', year: '2024', title: 'Student Management', desc: 'Full-stack enterprise application for student records and course registration systems.', tags: ['ASP.NET','SQL','JavaScript'], color: BR.red },
+    { num: '06', year: '2024', title: 'Toontastic', desc: 'Cartoon discovery app featuring dynamic episode browsing and interactive search UX.', tags: ['Search','Episodes','UX'], color: BR.gold },
+    { num: '07', year: 'CONCEPT', title: 'TeamUpNow', desc: 'Social sports platform connecting players to organize matches and track performance.', tags: ['Teammates','Scheduling','Reviews'], color: BR.teal },
   ]
 
   const scroll = (dir: 'left' | 'right') => {

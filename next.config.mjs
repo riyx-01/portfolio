@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['three', 'smooothy'],
-  reactStrictMode: false,
+  transpilePackages: ['three'],
+  reactStrictMode: true,
 };
 
 export default nextConfig;
